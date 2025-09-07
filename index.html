@@ -10,7 +10,7 @@
       margin: 0;
       padding: 0;
       font-family: Arial, sans-serif;
-      background-color: rgb(200, 211, 245);
+      background: linear-gradient(135deg, #c8d3f5, #e2e9fb);
       color: #022242;
     }
 
@@ -94,7 +94,17 @@
     }
 
     .semester-section {
+      border: 1px solid #ccc;
+      background-color: #f5faff;
+      border-radius: 8px;
+      padding: 20px;
       margin-bottom: 40px;
+      box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s ease;
+    }
+
+    .semester-section:hover {
+      transform: scale(1.01);
     }
 
     img.responsive.small-image {
@@ -111,6 +121,21 @@
       font-weight: bold;
     }
 
+    a.button {
+      display: inline-block;
+      background-color: #0055a5;
+      color: #fff !important;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      margin: 5px 0;
+    }
+
+    a.button:hover {
+      background-color: #003f80;
+    }
+
     footer {
       background-color: rgba(0, 64, 128, 0.9);
       color: white;
@@ -124,6 +149,13 @@
       header, nav {
         flex-direction: column;
         align-items: center;
+      }
+
+      nav a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #004080;
       }
 
       header h1 {
@@ -169,7 +201,7 @@
     <section id="syllabus">
       <h2>📘 Syllabus</h2>
       <p>Click below to view the official syllabus (PDF):</p>
-      <a href="https://www.mmmut.ac.in/ModelPapers/sy_230625063137.pdf" target="_blank">👉 Download Syllabus PDF</a>
+      <a href="https://www.mmmut.ac.in/ModelPapers/sy_230625063137.pdf" target="_blank" class="button">👉 Download Syllabus PDF</a>
     </section>
 
     <section id="semesters">
@@ -181,36 +213,26 @@
 
         <h4>🔌 BEE (Basic Electrical Engineering)</h4>
         <ul>
-          <li>📺 <strong>Unit 1:</strong> <a href="https://youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=h92yCGLF7sg4fjfy" target="_blank">Watch Playlist</a></li>
-          <li>📺 <strong>Unit 2:</strong> <a href="https://youtube.com/playlist?list=PLDN15nk5uLiCD8HljuyVX86WVeqTCml33&si=KOcFcAi26y1UxHZo" target="_blank">Watch Playlist</a></li>
+          <li>📺 <strong>Unit 1:</strong> <a href="https://youtube.com/playlist?list=PL9RcWoqXmzaLTYUdnzKhF4bYug3GjGcEc&si=h92yCGLF7sg4fjfy" target="_blank" class="button">Watch Playlist</a></li>
+          <li>📺 <strong>Unit 2:</strong> <a href="https://youtube.com/playlist?list=PLDN15nk5uLiCD8HljuyVX86WVeqTCml33&si=KOcFcAi26y1UxHZo" target="_blank" class="button">Watch Playlist</a></li>
         </ul>
 
         <h4>📐 BSM 110 (Engineering Mathematics)</h4>
         <ul>
-          <li>📺 <strong>Unit 1:</strong> <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfLlRGC9VM7bYVhXhxULZydQ&si=-5ems1QSoR6dWlKV" target="_blank">Watch Playlist</a></li>
-          <li>📺 <strong>Unit 2:</strong> <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfKV1QmzQNtzMuIH7mq5qb62&si=K4duCO59mNiczXbS" target="_blank">Watch Playlist</a></li>
+          <li>📺 <strong>Unit 1:</strong> <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfLlRGC9VM7bYVhXhxULZydQ&si=-5ems1QSoR6dWlKV" target="_blank" class="button">Watch Playlist</a></li>
+          <li>📺 <strong>Unit 2:</strong> <a href="https://youtube.com/playlist?list=PLU6SqdYcYsfKV1QmzQNtzMuIH7mq5qb62&si=K4duCO59mNiczXbS" target="_blank" class="button">Watch Playlist</a></li>
         </ul>
       </div>
 
       <div class="semester-section" id="sem2"><h3>Semester 2 📖</h3><p>Content coming soon...</p></div>
       <div class="semester-section" id="sem3"><h3>Semester 3 📖</h3><p>Content coming soon...</p></div>
       <div class="semester-section" id="sem4"><h3>Semester 4 📖</h3><p>Content coming soon...</p></div>
-      <div class="semester-section" id="sem5"><h3>Semester 5 📖</h3><p>Content coming soon...</p></div>
-      <div class="semester-section" id="sem6"><h3>Semester 6 📖</h3><p>Content coming soon...</p></div>
-      <div class="semester-section" id="sem7"><h3>Semester 7 📖</h3><p>Content coming soon...</p></div>
-      <div class="semester-section" id="sem8"><h3>Semester 8 📖</h3><p>Content coming soon...</p></div>
-    </section>
-    <div style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #222;">
-      👩🏻‍💻 Person Behind: 
-      <a href="https://in.linkedin.com/in/srishti-mishra-b8bb1837b?trk=profile-badge" target="_blank" style="color: #006699; font-weight: bold; text-decoration: none;">
-        Srishti Mishra (LinkedIn)
-      </a>
-    </div>
-  </div>
-
-  <footer>
-    🎯 Hope it will help you to pass and score good CGPAs in all the sem 😇📚🔥  
-    <br>&copy; 2025 MMMUT Mechanical Guide. All rights reserved.
-
-
-
+      <div class="semester-section" id="sem5"><h3>Semester 5 📖</h3><p
+style="text-align: center; margin-top: 40px; font-size: 1.1em; color: #222;">
+  👩🏻‍💻 Person Behind: 
+  <a href="https://in.linkedin.com/in/srishti-mishra-b8bb1837b?trk=profile-badge" 
+     target="_blank" 
+     style="color: #006699; font-weight: bold; text-decoration: none;">
+    Srishti Mishra (LinkedIn)
+  </a>
+</div>
